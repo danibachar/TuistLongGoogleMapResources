@@ -59,7 +59,7 @@ extension Project {
             sources: ["Targets/\(name)/Sources/**"],
             resources: [
                 "Targets/\(name)/Resources/**",
-                .glob(pattern: "libs/Google/GoogleMaps/GoogleMaps-6.0.1-beta/GoogleMaps.xcframework/ios-arm64/GoogleMaps.framework/Resources/GoogleMaps.bundle"),
+                .glob(pattern: "Resources/Google/GoogleMaps/GoogleMaps-6.0.1-beta/GoogleMaps.xcframework/ios-arm64/GoogleMaps.framework/Resources/GoogleMaps.bundle"),
             ],
             dependencies: dependencies + [
                 .xcframework(path: "libs/Google/GoogleMaps/GoogleMaps-6.0.1-beta/GoogleMaps.xcframework"),
