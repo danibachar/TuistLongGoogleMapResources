@@ -18,6 +18,9 @@ The resources are pointing to the copy in the `Resources` folder, while the fram
 
 Before reproducing the issue, run `tuist generate` to generate the project. You will notice that the app is linked against the xcframeworks, and the bundle is copied in the copy resources build phase (refer to the attached images).
 
+Resources - ![Resources](ScreenShots/Resources)
+Frameworks - ![Frameworks](ScreenShots/Frameworks) 
+
 To reproduce the issue, you can make the following changes:
 
 1. Change line 62 to fetch the resources from the `libs` folder:
